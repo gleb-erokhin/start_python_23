@@ -6,8 +6,14 @@
 
 x = float(input("Введите число: "))
 sum = 0
+# входящие числа преобразуем в текст для отсекания точки
+update = str(x)
+x = update.replace(".", "")
+# после чего возвращаем обратно в int
+x = int(x)
+
 while x > 0:
     num = x % 10
     x = x // 10
     sum = sum + num
-print(int(sum))
+print(sum)
