@@ -5,6 +5,9 @@
 
 x = int(input("Ведите число: "))
 count = 0
+# for i in range(1, x + 1):
+
 while count < x:
     count += 1
+
     print(count, end=" ")

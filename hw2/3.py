@@ -3,8 +3,8 @@
 # #выведите на экран их сумму.
 
 n = int(input("Enter munber: "))
-sum = 0
+summ = 0
 for i in range(1, n + 1):
-    sum = sum + ((1 + (1 / i)) ** i)
-    print(f"i => {i}, sum => {sum}")  # for testing
-print(sum)
+    summ = summ + ((1 + (1 / i)) ** i)
+    print(f"i => {i}, sum => {summ}")  # for testing
+print(summ)
