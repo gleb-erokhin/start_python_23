@@ -5,7 +5,7 @@
 # - 0,56 -> 11
 
 x = float(input("Введите число: "))
-sum = 0
+summ = 0
 # входящие числа преобразуем в текст для отсекания точки
 update = str(x)
 x = update.replace(".", "")
@@ -13,7 +13,17 @@ x = update.replace(".", "")
 x = int(x)
 
 while x > 0:
+    # summ += n % 10 # запись сложения в одну строку
     num = x % 10
     x = x // 10
-    sum = sum + num
+    summ = summ + num
 print(sum)
+
+# второй вариант
+
+# for i in n:
+#     summ += int(i)
+#  третий вариант
+# for i in n:
+#     if i.isdigit():
+#         summ += int(i)

@@ -4,10 +4,14 @@
 # N = 4, тогда [ 1, 2, 6, 24 ] (1, 1*2, 1*2*3, 1*2*3*4)
 
 x = int(input("Ведите число: "))
-count = 0
+count = 1
+factorial = 1
 # for i in range(1, x + 1):
+my_list = []
 
-while count < x:
+while count <= x:
+    factorial = factorial * count
+    my_list.append(factorial)
     count += 1
 
-    print(count, end=" ")
+print(my_list)
