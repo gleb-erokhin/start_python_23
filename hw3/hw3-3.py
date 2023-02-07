@@ -3,3 +3,14 @@
 # значением дробной части элементов.
 # Пример:
 # - [1.1, 1.2, 3.1, 5, 10.01] => 0.19
+
+my_list = [1.1, 1.2, 3.1, 5, 10.01]
+mini = 0
+maxi = 0
+for m in my_list:
+    ans = round(m - int(m), 2)
+    if ans > maxi:
+        maxi = ans
+    else:
+        mini = ans
+print("=>", maxi - mini)
