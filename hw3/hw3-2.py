@@ -5,4 +5,13 @@
 # - [2, 3, 4, 5, 6] => [12, 15, 16];
 # - [2, 3, 5, 6] => [12, 15]
 
-my_list = [2, 3, 5, 6]
+list1 = [2, 3, 4, 5, 5, 6]
+res = []
+while list1:
+    res.append(list1[0] * list1[-1])
+    list1.pop(0)
+    list1.pop(-1)
+    if len(list1) == 1:
+        res.append(list1[0] * list1[0])
+        list1.pop(0)
+print(res)
