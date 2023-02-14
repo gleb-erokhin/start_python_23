@@ -3,10 +3,16 @@
 my_str = "aaabbcccaaa"
 # my_list = list(my_str)
 # my_set = set(my_str)
-my_str = my_str.split('')
+count = 0
+curent = my_str[0]
+if len(my_str) == 0:
+    print("Строка пустая")
+else:
+    for el in my_str:
+        if el == my_str[]
 
 new_list = []
-count = 0
+
 print(my_str)
 for i in range(len(my_list) - 1):
     if my_list[i] == my_list[i + 1]:
