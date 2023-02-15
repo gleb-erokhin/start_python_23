@@ -21,3 +21,25 @@ else:
 #         new_list.append(my_list[i])
 #     count += 1
 # print(new_list, count)
+
+
+def rle(src):
+    result = []
+    # допишем букву, отличающуюся от последней в строке
+    # src += 'b' if src.endswith('a') else 'a'
+    # теперь, заметь, она не пуста и проверка на пустоту не нужна
+    current = src[0]
+    counter = 0  # тут ошибочка, ты пытался дважды посчитать первую букву
+    for e in src:
+        if e == current:
+            counter += 1
+        else:
+            result.append((current, counter))
+            current = e
+            counter = 1
+    return result
+
+
+string = 'aaabbbtttggghhhavaaa'
+
+print(rle(string))
