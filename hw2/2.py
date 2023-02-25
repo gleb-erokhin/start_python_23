@@ -6,7 +6,6 @@
 x = int(input("Ведите число: "))
 count = 1
 factorial = 1
-# for i in range(1, x + 1):
 my_list = []
 
 while count <= x:

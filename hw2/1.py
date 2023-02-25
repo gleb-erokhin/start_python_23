@@ -17,7 +17,7 @@ while x > 0:
     num = x % 10
     x = x // 10
     summ = summ + num
-print(sum)
+print(summ)
 
 # второй вариант
 
