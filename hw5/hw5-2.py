@@ -9,12 +9,6 @@
 
 import random
 
-# sweets = 150
-# max_sweets_hod = 28
-# player1 = 0
-# player2 = 0
-# player_hod = 0
-
 
 def chose():  # функция жеребьевки
     print("Выбор первого хода")
@@ -28,10 +22,7 @@ def chose():  # функция жеребьевки
 def play():  # функция для игры
     sweets = 150
     max_sweets_hod = 28
-    player1 = 0
-    player2 = 0
     player_hod = 0
-    bot = True
     while sweets:
         player = int(
             input(f"Ход игрока {player_hod + 1}, Сколько конфет возьмете: "))
